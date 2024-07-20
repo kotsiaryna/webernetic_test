@@ -7,18 +7,38 @@ body {
   height: 100vh;
   padding: 36px 40px;
   background-color: white;
+  @media screen and (max-width: 1200px) {
+    padding: 24px;
+  }
+  @media screen and (max-width: 700px) {
+    padding: 14px 24px;
+  }
+
 }
 .wrapper {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  background: rgb(235, 240, 250);
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100%;
   grid-template-areas: 
   "info image";
 
-  border-radius: 10px;
-  background: rgb(235, 240, 250);
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+    "info"
+    "image";
+  }
+
+  @media screen and (max-width: 700px) {
+      grid-template-rows: 50% 50%;
+ 
+  }
 
 
 }
@@ -27,20 +47,40 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 72px;
+  padding: 0 72px;
+  @media screen and (max-width: 1200px) {
+    justify-content: flex-start;
+    padding: 24px;
+  }
 
 		&__heading {
       font: 500 30px "Manrope", sans-serif;
       line-height: 160%;
       color: rgb(31, 66, 132);
+      @media screen and (max-width: 1200px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 17px;
+      }
     }
 
 		&__text {
-      width: 511px;
+      max-width: 511px;
       color: #727272;
       font: 400 17px "Manrope", sans-serif;
-      line-height: 160%;
+      line-height: 160%; 
       margin: 18px 0 36px 0;
+      @media screen and (max-width: 1200px) {
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 13px;
+        margin-bottom: 18px;
+        margin-top: 14px;
+      }
     }
 
 		&__button {
@@ -58,10 +98,31 @@ body {
       background: right 12px center / 44px no-repeat url('./src/assets/images/arrow.png');
       background-color: rgb(36, 76, 152);
 
+      @media screen and (max-width: 1200px) {
+        width: 261px;
+        height: 56px;
+        padding-left: 18px;
+        background-size: 36px;
+        font-size: 15px;
+      }
 
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
     }
 }
 .image {
   grid-area: image;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: center/contain no-repeat url('./src/assets/images/bg.png');
+  @media screen and (max-width: 1550px) {
+    background-image: url('./src/assets/images/bg_1440.png');
+  }
+  @media screen and (max-width: 1200px) {
+    background-image: url('./src/assets/images/bg.png');
+    background-size: cover;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
 }
