@@ -18,18 +18,18 @@
       </div>
       <div class="image"></div>
     </main>
-    <section class="modal">
-      <div class="modal__wrapper">
-        <button class="modal__close"></button>
+    <section class="modal" hidden>
+      <form class="modal__wrapper">
+        <button type="reset" class="modal__close"></button>
         <h2 class="modal__heading">Войти в систему</h2>
         <input class="modal__input" type="email" name="email" placeholder="Email/Телефон">
         <input class="modal__input" type="password" name="password" placeholder="Пароль">
-        <label class="modal__remember" for="remember"><input type="checkbox">Запомнить пароль </label>
+        <label class="modal__remember"><input type="checkbox" name="remember">Запомнить пароль </label>
         <button class="modal__recover">Восстановить</button>
-        <button class="modal__button active">Войти</button>
-        <button class="modal__button">Зарегестрироваться</button>
-      </div>
+        <button type="submit" class="modal__button active" id="enter">Войти</button>
+        <button type="submit" class="modal__button" id="reg">Зарегестрироваться</button>
+      </form>
     </section>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>
