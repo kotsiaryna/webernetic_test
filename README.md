@@ -7,3 +7,5 @@
 Деплой [тут](https://webernetic-demo.netlify.app/)
 
 Искодный код в ветке [dev](https://github.com/kotsiaryna/webernetic_test/tree/dev)
+
+P.S. Принимаемый динамический контент модального окна выводится в консоль  
