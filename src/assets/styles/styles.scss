@@ -93,7 +93,7 @@ body {
       font: 500 18px "Manrope", sans-serif;
       line-height: 160%;
       text-align: left;
-      background: right 12px center / 44px no-repeat url('./src/assets/images/arrow.png');
+      background: right 12px center / 44px no-repeat url('../images/arrow.png');
       background-color: rgb(36, 76, 152);
 
       @media screen and (max-width: 1200px) {
@@ -116,12 +116,12 @@ body {
   grid-area: image;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: center/contain no-repeat url('./src/assets/images/bg.png');
+  background: center/contain no-repeat url('../images/bg.png');
   @media screen and (max-width: 1550px) {
-    background-image: url('./src/assets/images/bg_1440.png');
+    background-image: url('../images/bg_1440.png');
   }
   @media screen and (max-width: 1200px) {
-    background-image: url('./src/assets/images/bg.png');
+    background-image: url('../images/bg.png');
     background-size: cover;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
